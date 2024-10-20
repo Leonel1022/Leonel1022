@@ -1,8 +1,8 @@
 # Bienvenido a mi perfil
 
 ### Acerca de mí
-Soy un amante de la programacion,redes informaticas y sistemas.
-aspirante en programacion y ciberseguridad.
+Soy un amante de la programacion,redes informaticas y sistemas. <br>
+aspirante en programacion y ciberseguridad.<br>
 Me gusta ayudar a la gente con mis conocimientos y darles una solución breve pero muy solida.
 
 ### Contacto
