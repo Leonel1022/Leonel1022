@@ -1,12 +1,12 @@
 # Bienvenido a mi perfil
 
 ### Acerca de mí
-Soy un amante de la programacion,redes informaticas y sistemas. <br>
-aspirante en programacion y ciberseguridad.<br>
+Soy un amante de la programacion,redes y sistemas informaticos. <br>
+aspirante a programador e ing. en ciberseguridad.<br>
 Me gusta ayudar a la gente con mis conocimientos y darles una solución breve pero muy solida.
 
 ### Contacto
-Puedes comunicarte conmigo desde mi Discord, allí te ayudaré en lo que necesites.
+Puedes comunicarte conmigo desde mi [https://discord.com/users/942945514628988958](Discord), allí te ayudaré en lo que necesites.
 
 ## Información adicional
 Puedes saber más de mí en mi página [https://leonel1022.github.io](https://leonel1022.github.io)
