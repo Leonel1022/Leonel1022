@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Configura la ventana gráfica para dispositivos móviles, adaptando el ancho al dispositivo y estableciendo el zoom inicial.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--especifica el nombre del autor del documento.-->
+    <meta name="author" content="Leonel1022">
+
+    <!-- Título que aparecerá en la vista previa -->
+    <meta property="og:title" content="Home" />
+
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile {
+            margin-top: 50px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+        }
+
+        .profile h1 {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            color: #b9b9b9;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .link {
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            color: #121212;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .link.web {
+            background-color: #FF7043;
+        }
+
+        .link.script {
+            background-color: #FFA726;
+        }
+
+        .link:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s;
+            background-color: #FF8C00;
+            color: #FFFFFF;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #BDBDBD;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="foto de perfil.jpg" alt="Profile Picture" id="profile-pic">
+        <h1>Leonel1022 Projects</h1>
+    </div>
+
+    <div class="links-container">
+        <!-- Web Projects -->
+        <a href="https://leonel1022.github.io/" class="link web">LeoShield</a>
+        <a href="https://leonel1022.github.io/permisos-android/" class="link web">Permisos Android</a>
+        <a href="https://leonel1022.github.io/esteganografia" class="link web">Esteganografía</a>
+        <a href="https://leonel1022.github.io/calculator/" class="link web">Calculator</a>
+        
+        <!-- Scripts -->
+         <h1>Python</h1>
+        <a href="https://github.com/Leonel1022/autocliker-python" class="link script">AutoClicker Python</a>
+        <a href="https://github.com/Leonel1022/LeonelHasher1022-python" class="link script">LeonelHasher1022 Python</a>
+    </div>
+
+    <footer>
+        © 2024 LeoShield. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
