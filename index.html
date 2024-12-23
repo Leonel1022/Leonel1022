@@ -2,15 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Configura la ventana gráfica para dispositivos móviles, adaptando el ancho al dispositivo y estableciendo el zoom inicial.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--especifica el nombre del autor del documento.-->
     <meta name="author" content="Leonel1022">
-
-    <!-- Título que aparecerá en la vista previa -->
     <meta property="og:title" content="Home" />
-
     <title>Home</title>
     <style>
         body {
@@ -56,7 +50,7 @@
             text-decoration: none;
             padding: 15px 20px;
             border-radius: 5px;
-            color: #121212;
+            color: #000000;
             font-weight: bold;
             font-size: 20px;
             width: 100%;
@@ -64,17 +58,24 @@
         }
 
         .link.web {
-            background-color: #FF7043;
+            background-color: #FF9800;
         }
 
         .link.script {
-            background-color: #FFA726;
+            background-color: #FFD500;
         }
 
-        .link:hover {
+        .link.web:hover {
             transform: scale(1.05);
             transition: transform 0.2s;
             background-color: #FF8C00;
+            color: #FFFFFF;
+        }
+
+        .link.script:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s;
+            background-color: #ebc500;
             color: #FFFFFF;
         }
 
@@ -83,6 +84,31 @@
             font-size: 14px;
             color: #BDBDBD;
             opacity: 0.8;
+        }
+
+        /* Media Queries for mobile devices */
+        @media (max-width: 768px) {
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile h1 {
+                font-size: 20px;
+            }
+
+            .links-container {
+                margin-top: 20px;
+                width: 95%;
+            }
+
+            .link {
+                padding: 12px 15px; /* Reducing padding */
+                font-size: 18px; /* Reducing font size */
+                width: 90%; /* Buttons will not be full width */
+                margin-left: 5%; /* Adding space from the left edge */
+                margin-right: 5%; /* Adding space from the right edge */
+            }
         }
     </style>
 </head>
@@ -93,14 +119,12 @@
     </div>
 
     <div class="links-container">
-        <!-- Web Projects -->
         <a href="https://leonel1022.github.io/" class="link web">LeoShield</a>
         <a href="https://leonel1022.github.io/permisos-android/" class="link web">Permisos Android</a>
         <a href="https://leonel1022.github.io/esteganografia" class="link web">Esteganografía</a>
         <a href="https://leonel1022.github.io/calculator/" class="link web">Calculator</a>
         
-        <!-- Scripts -->
-         <h1>Python</h1>
+        <h1>Python</h1>
         <a href="https://github.com/Leonel1022/autocliker-python" class="link script">AutoClicker Python</a>
         <a href="https://github.com/Leonel1022/LeonelHasher1022-python" class="link script">LeonelHasher1022 Python</a>
     </div>
