@@ -6,3 +6,6 @@ https://leonel1022.github.io/esteganografia
 scripts
 https://github.com/Leonel1022/autocliker-python
 https://github.com/Leonel1022/LeonelHasher1022-python
+
+RPTs
+https://github.com/Leonel1022/Educational-Malware-Samples
