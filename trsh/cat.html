@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 500px 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .sleep-message {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f3c138;
+        }
+        .work-message {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        .time {
+            font-size: 2.5em;
+            color: #ffeb3b;
+        }
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 500px 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: brightness(0.6);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay" id="background"></div>
+    <div>
+        <h1>¿Qué estamos haciendo con nuestras vidas?</h1>
+        <p id="message" class="sleep-message"></p>
+        <p class="time" id="current-time"></p>
+    </div>
+
+    <script>
+        let simulatedHour = new Date().getHours();  // Hora simulada inicial (hora real al cargar la página)
+
+        function checkTime() {
+            const now = new Date();
+            const hours = simulatedHour;  // Usar la hora simulada
+
+            const minutes = now.getMinutes();
+            const timeString = `${hours}:${minutes < 10 ? '0' + minutes : minutes}`;
+            document.getElementById('current-time').textContent = `Hora actual: ${timeString}`;
+
+            let message = '';
+            let pageTitle = '¿Qué estamos haciendo con nuestras vidas?';
+            let backgroundImage = '';
+
+            if (hours >= 22 || hours < 6) {
+                message = "¡Es momento de dormir! 😴";
+                pageTitle = '¡Qué haces despierto!';
+                backgroundImage = 'url("cat_sleep.jpg")';
+                document.getElementById('message').className = "sleep-message";
+            } else if (hours >= 6 && hours < 9) {
+                message = "¡Es hora de desayunar! 🍞☕";
+                pageTitle = '¡Hora del desayuno!';
+                backgroundImage = 'url("cat_coffee.jpg")';
+                document.getElementById('message').className = "work-message";
+            } else if (hours >= 9 && hours < 15) {
+                message = "¡Es un buen momento para trabajar!";
+                pageTitle = '¡Vamos al lío!';
+                backgroundImage = 'url("cat_learn.jpg")';
+                document.getElementById('message').className = "work-message";
+            } else if (hours >= 15 && hours < 18) {
+                message = "¡Llego el momento de estudiar!";
+                pageTitle = '¡A estudiar!';
+                backgroundImage = 'url("cat_study.jpg")';
+                document.getElementById('message').className = "work-message";
+            } else if (hours >= 18 && hours < 22) {
+                message = "¡Es hora de relajarse!";
+                pageTitle = '¡Toma un descanso!';
+                backgroundImage = 'url("cat_relax.jpg")';
+                document.getElementById('message').className = "work-message";
+            }
+
+            // Cambiar el fondo de la página
+            const backgroundDiv = document.getElementById('background');
+            backgroundDiv.style.backgroundImage = backgroundImage;
+
+            document.getElementById('message').textContent = message;
+            document.title = pageTitle;
+        }
+
+        // Función para cambiar la hora simulada
+        function setHour(hour) {
+            if (hour >= 0 && hour < 24) {
+                simulatedHour = hour;  // Cambiar la hora simulada
+                checkTime();  // Actualizar la página con la nueva hora
+            } else {
+                console.log("Por favor, ingresa una hora válida (0-23).");
+            }
+        }
+
+        // Ejecutar la función inmediatamente
+        checkTime();
+
+        // Actualizar la hora automáticamente cada 30 segundos (30,000 ms)
+        setInterval(checkTime, 30000);
+    </script>
+</body>
+</html>
