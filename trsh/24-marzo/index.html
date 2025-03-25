@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>24 de Marzo</title>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+ <style>
+ body {
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #fffaf0;
+ color: #2c3e50;
+ line-height: 1.6;
+ }
+ header {
+ background: linear-gradient(135deg, #34495e, #2c3e50);
+ color: #ecf0f1;
+ padding: 30px;
+ font-size: 28px;
+ text-align: center;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .container {
+ max-width: 900px;
+ margin: 40px auto;
+ padding: 30px;
+ background: #ffffff;
+ border-radius: 15px;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+ }
+ h2 {
+ color: #16a085;
+ margin-bottom: 20px;
+ font-weight: 700;
+ border-bottom: 2px solid #16a085;
+ display: inline-block;
+ padding-bottom: 5px;
+ }
+ p {
+ margin: 15px 0;
+ font-weight: 400;
+ color: #34495e;
+ }
+ button {
+ background-color: #3498db;
+ color: #fff;
+ border: none;
+ padding: 12px 25px;
+ font-size: 16px;
+ cursor: pointer;
+ border-radius: 25px;
+ transition: background-color 0.3s ease, transform 0.2s ease;
+ margin: 10px 5px;
+ display: inline-block;
+ }
+ button:hover {
+ background-color: #2980b9;
+ transform: translateY(-2px);
+ }
+ ul {
+ text-align: left;
+ margin: 20px auto;
+ max-width: 700px;
+ padding-left: 20px;
+ }
+ li {
+ margin: 10px 0;
+ color: #2c3e50;
+ }
+ osama
+  {
+ font-weight: 700;
+ color: #8e44ad; 
+ }
+ ul li:before {
+ content: "• ";
+ color: #16a085;
+ font-weight: bold;
+ }
+ .button-container {
+ text-align: center;
+ }
+ .responsible-images {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin-top: 20px;
+ }
+ .responsible-item {
+ text-align: center;
+ margin: 10px;
+ }
+ .responsible-item img {
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ border-radius: 10px;
+ }
+ .responsible-item span {
+ display: block;
+ margin-top: 5px;
+ font-size: 14px;
+ color: #34495e;
+ font-weight: 400;
+ }
+ @media (max-width: 600px) {
+ body {
+ font-size: 16px; /* Tamaño base más grande para legibilidad */
+ background-color: #ede7d9; /* Fondo aún más oscuro en móviles */
+ }
+ header {
+ padding: 15px;
+ font-size: 20px;
+ }
+ .container {
+ margin: 10px;
+ padding: 15px;
+ }
+ h2 {
+ font-size: 22px;
+ }
+ p {
+ font-size: 14px;
+ }
+ button {
+ padding: 8px 15px;
+ font-size: 13px;
+ }
+ .responsible-item img {
+ width: 100px;
+ height: 100px;
+ }
+ .responsible-item span {
+ font-size: 12px;
+ }
+ ul {
+ padding-left: 10px;
+ }
+ }
+ </style>
+</head>
+<body>
+ <header>
+ Día de la Memoria, por la Verdad y la Justicia
+ </header>
+ <div class="container">
+ <!-- Elementos de audio -->
+ <audio id="audio1" src="Charly García - Himno Nacional Argentino.mp3"></audio>
+ <audio id="audio2" src="La argentinidad al palo.mp3"></audio>
+ <audio id="audio3" src="Like a Prayer.mp3"></audio>
+
+ <h2>¿Qué pasó el 24 de marzo en Argentina?</h2>
+ <div class="button-container">
+ <button onclick="playAudios()">Reproducir Música para mejorar la experiencia</button>
+ <button onclick="skipToNext()">Siguiente Música</button>
+ </div>
+
+ <p>El 24 de marzo de 1976 se dio un golpe de Estado que derrocó al gobierno constitucional de <span class="osama
+    ">Isabel de Perón</span>. Esa jornada marcó el inicio de una de las etapas más oscuras de la historia argentina, conocida como el Proceso de Reorganización Nacional. Las Fuerzas Armadas, en coordinación con sectores civiles, tomaron el control del poder, instaurando un régimen que se caracterizó por la suspensión de las libertades democráticas, la censura y la represión sistemática contra cualquier forma de disidencia.</p>
+ <p>El golpe fue ejecutado de forma repentina y coordinada, generando un ambiente de confusión y terror en la población. Militares en vehículos blindados ocuparon puntos estratégicos, interceptando comunicaciones y clausurando instituciones gubernamentales, lo que dejó al país sin una estructura formal de defensa de la democracia. Con el cierre de medios de comunicación y la supresión de organismos legislativos, se inició una campaña de represión brutal que afectó a miles de ciudadanos. Se implementaron medidas de control social y militarización de la vida cotidiana, estableciendo un clima de miedo en el que familiares y amigos vivían en la incertidumbre ante la desaparición de sus seres queridos.</p>
+ <p>Además, este suceso dio inicio a una etapa en la que se cometieron graves violaciones a los derechos humanos: desapariciones forzadas, torturas y asesinatos se convirtieron en prácticas comunes, dejando una profunda herida en la sociedad argentina que persiste en la memoria colectiva.</p>
+ 
+ <h2>¿Qué provocó la dictadura?</h2>
+ <p>La instauración de la dictadura militar fue el resultado de una compleja interacción de factores políticos, económicos y sociales. Durante los últimos años del gobierno de <span class="osama
+    ">Isabel de Perón</span>, Argentina se encontraba sumida en una profunda crisis económica. La alta inflación, la devaluación de la moneda y el creciente endeudamiento minaron la confianza en el sistema económico, provocando un fuerte descontento en amplios sectores de la sociedad.</p>
+ <p>En el ámbito político, la crisis se agravaba por la polarización y la violencia ideológica. Movimientos armados de izquierda emprendían acciones directas contra lo que consideraban un régimen injusto, mientras que grupos conservadores y militares veían en el comunismo una amenaza inminente. Esta atmósfera de extrema tensión creó el escenario perfecto para que las Fuerzas Armadas se presentaran como la única alternativa para restablecer el orden. La narrativa oficial del golpe, que justificaba la intervención militar como una necesidad para combatir el terrorismo interno, resonó en una población cansada de la inestabilidad y la corrupción del gobierno.</p>
+ <p>Asimismo, la corrupción y la ineficiencia institucional contribuyeron significativamente. La falta de transparencia, la mala gestión y los conflictos internos entre distintos sectores políticos hicieron que muchos argentinos perdieran la fe en las instituciones democráticas. La inacción ante la creciente violencia y el caos económico generaron un clima de desesperación en el que la toma del poder por parte de los militares fue vista, por algunos, como una solución para restaurar el orden.</p>
+ 
+ <h2>La vida en la dictadura</h2>
+ <p>Durante la dictadura, la sociedad vivió bajo un estricto control. La censura limitaba la prensa y la cultura, los opositores al régimen eran perseguidos y la represión afectaba a estudiantes, intelectuales y sindicalistas. Existía un ambiente de miedo y control constante.</p>
+ 
+ <h2>Autos utilizados por la dictadura</h2>
+ <p>Entre los vehículos usados por las fuerzas represivas estaban el Ford Falcon verde, símbolo del terrorismo de Estado, y camionetas de la policía y el ejército. Estos autos eran utilizados en operativos de secuestro y traslado de detenidos a centros clandestinos.</p>
+ 
+ <h2>Principales responsables</h2>
+ <ul>
+ <li class="osama
+ ">Jorge Rafael Videla - Presidente de facto.</li>
+ <li class="osama
+ ">Emilio Massera - Comandante de la Armada.</li>
+ <li class="osama
+ ">Orlando Ramón Agosti - Comandante de la Fuerza Aérea.</li>
+ </ul>
+ <div class="responsible-images">
+ <div class="responsible-item">
+ <img src="videla.png" alt="Jorge Rafael Videla">
+ <span>Jorge Rafael Videla</span>
+ </div>
+ <div class="responsible-item">
+ <img src="massera.png" alt="Emilio Massera">
+ <span>Emilio Massera</span>
+ </div>
+ <div class="responsible-item">
+ <img src="agosti.png" alt="Orlando Ramón Agosti">
+ <span>Orlando Ramón Agosti</span>
+ </div>
+ </div>
+ 
+ <h2>Centros clandestinos de detención</h2>
+ <ul>
+ <li>ESMA (Escuela de Mecánica de la Armada)</li>
+ <li>El Olimpo</li>
+ <li>La Perla</li>
+ <li>Campo de Mayo</li>
+ </ul>
+ 
+ <h2>Personas famosas reprimidas</h2>
+ <ul>
+ <li class="osama
+ ">Alicia Moreau de Justo - Activista y política, sufrió persecución por sus ideas.</li>
+ <li class="osama
+ ">Julio Cortázar - Escritor, exiliado por su oposición al régimen.</li>
+ <li class="osama
+ ">Mercedes Sosa - Cantante, censurada y exiliada por su activismo.</li>
+ </ul>
+ 
+ <h2>Personas famosas asesinadas</h2>
+ <ul>
+ <li class="osama
+ ">Rodolfo Walsh - Periodista y escritor.</li>
+ <li class="osama
+ ">Haroldo Conti - Escritor y militante.</li>
+ <li class="osama
+ ">Raymundo Gleyzer - Cineasta.</li>
+ <li class="osama
+ ">Silvia Suppo - Activista por los derechos humanos.</li>
+ </ul>
+ 
+ <h2>Importancia del Día de la Memoria</h2>
+ <p>Desde 2006, el 24 de marzo es un feriado nacional en Argentina dedicado a la memoria de las víctimas del terrorismo de Estado. Esta fecha se ha convertido en un símbolo de resistencia y de compromiso con la verdad, la justicia y los derechos humanos.</p>
+ <p>Un elemento icónico de esta conmemoración es el pañuelo blanco, utilizado originalmente por las Madres de Plaza de Mayo. Este símbolo representa la lucha incansable de las madres y abuelas por encontrar a sus hijos y nietos desaparecidos durante la dictadura. El pañuelo, pintado o bordado en las baldosas de la Plaza de Mayo y llevado en la cabeza por las manifestantes, se ha convertido en un emblema universal de la resistencia pacífica y la búsqueda de justicia.</p>
+ <p>Cada año, miles de personas se reúnen en plazas, avenidas y espacios públicos para participar en marchas y actos conmemorativos. Estos eventos no solo rinden homenaje a las víctimas, sino que también buscan generar conciencia sobre la importancia de preservar la democracia y evitar la repetición de los errores del pasado.</p>
+ <p>Además, se organizan actividades culturales y educativas, como exposiciones, ciclos de cine, charlas y debates en escuelas y universidades, que invitan a reflexionar sobre la historia reciente del país. Estas actividades ayudan a las nuevas generaciones a comprender la magnitud de la represión vivida y la necesidad de mantener viva la memoria colectiva.</p>
+ <p>La conmemoración del 24 de marzo también es un momento para reafirmar el compromiso del Estado y de la sociedad en la búsqueda de justicia, la reparación y la verdad. Diversos organismos de derechos humanos y organizaciones civiles participan activamente en la difusión de información y en la promoción de políticas públicas que protejan los derechos fundamentales.</p>
+ <p>En resumen, el Día de la Memoria es esencial para recordar un pasado doloroso y para fortalecer la democracia y los valores de libertad y justicia en Argentina.</p>
+ </div>
+ <script>
+    console.log("Esta página está desarrollada por Leonel1022 - Versión 5.0 - Marzo 2025");
+    
+    // Obtener los elementos de audio
+    const audio1 = document.getElementById("audio1");
+    const audio2 = document.getElementById("audio2");
+    const audio3 = document.getElementById("audio3");
+    
+    // Función para reproducir los audios desde el principio
+    function playAudios() {
+        console.log("Intentando reproducir audio1...");
+        // Pausar y reiniciar todos los audios
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+        audio1.currentTime = 0;
+        audio2.currentTime = 0;
+        audio3.currentTime = 0;
+        // Reproducir el primer audio
+        audio1.play().then(() => {
+            console.log("Audio1 reproduciéndose");
+        }).catch(error => {
+            console.error("Error al reproducir audio1:", error);
+        });
+    }
+    
+    // Función para saltar al siguiente audio
+    function skipToNext() {
+        console.log("Saltando al siguiente audio...");
+        if (!audio1.paused) {
+            // Si audio1 está reproduciéndose, pasar a audio2
+            audio1.pause();
+            audio2.currentTime = 0;
+            audio2.play().then(() => {
+                console.log("Audio2 reproduciéndose");
+            }).catch(error => {
+                console.error("Error al reproducir audio2:", error);
+            });
+        } else if (!audio2.paused) {
+            // Si audio2 está reproduciéndose, pasar a audio3
+            audio2.pause();
+            audio3.currentTime = 0;
+            audio3.play().then(() => {
+                console.log("Audio3 reproduciéndose");
+            }).catch(error => {
+                console.error("Error al reproducir audio3:", error);
+            });
+        } else if (!audio3.paused) {
+            // Si audio3 está reproduciéndose, detener
+            audio3.pause();
+            console.log("No hay más audios en la lista.");
+        }
+    }
+    
+    // Reproducir el primer audio al cargar la página
+    window.onload = function() {
+        playAudios();
+    };
+    
+    // Reproducir el segundo audio cuando termine el primero
+    audio1.onended = function() {
+        console.log("Audio1 terminó, iniciando audio2...");
+        audio2.play().then(() => {
+            console.log("Audio2 reproduciéndose");
+        }).catch(error => {
+            console.error("Error al reproducir audio2:", error);
+        });
+    };
+    
+    // Reproducir el tercer audio cuando termine el segundo
+    audio2.onended = function() {
+        console.log("Audio2 terminó, iniciando audio3...");
+        audio3.play().then(() => {
+            console.log("Audio3 reproduciéndose");
+        }).catch(error => {
+            console.error("Error al reproducir audio3:", error);
+        });
+    };
+    
+    // Opcional: Si quieres que el audio3 regrese al audio1 al terminar
+    audio3.onended = function() {
+        console.log("Audio3 terminó, volviendo a audio1...");
+        playAudios();
+    };
+    </script>
+</body>
+</html>
